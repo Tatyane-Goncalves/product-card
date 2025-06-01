@@ -16,7 +16,7 @@ Foco total em **responsividade**, **modularidade** e **facilidade de personaliza
 
 
 ---
-## ## ⚙️ Props disponíveis
+## ⚙️ Props disponíveis
 
 | Prop         | Tipo     | Descrição                                |
 |--------------|----------|-------------------------------------------|
