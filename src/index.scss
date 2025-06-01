@@ -1,0 +1,79 @@
+$color-bg: #fff;
+$color-surface: #f9f9f9;
+$color-text-primary: #1f1f1f;
+$color-text-secondary: #6b6b6b;
+$color-price: #2e7d32;
+$color-promo: #d32f2f;
+$destaque-color-primary: #1976d2;
+$destaque-color-primary-hover: #1565c0;
+$color-tag: #fbc02d;
+$color-discount: #d32f2f;
+$color-background-dark: #1e1e1e;
+$color-surface-dark: #2c2c2c;
+$color-text-dark: #f5f5f5;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-surface;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  min-width: 200px;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: $color-bg;
+  z-index: 10;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main {
+  flex: 1;
+  padding-block: 2rem;
+  background-color: $color-surface;
+}
+
+footer {
+  background-color: $color-text-primary;
+  color: $color-bg;
+  text-align: center;
+  padding: 1rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+

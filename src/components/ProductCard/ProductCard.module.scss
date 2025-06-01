@@ -1,0 +1,104 @@
+$color-bg: #fff;
+$color-surface: #f9f9f9;
+$color-text-primary: #1f1f1f;
+$color-text-secondary: #6b6b6b;
+$color-price: #2e7d32;
+$color-promo: #d32f2f;
+$destaque-color-primary: #1976d2;
+$destaque-color-primary-hover: #1565c0;
+$color-tag: #fbc02d;
+$color-discount: #d32f2f;
+$color-background-dark: #1e1e1e;
+$color-surface-dark: #2c2c2c;
+$color-text-dark: #f5f5f5;
+
+.ProductCard {
+  min-width: 300px;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: $color-surface;
+  color: $color-text-primary;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  &__image {
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  &__fallback {
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 200px;
+    background-color: $color-text-secondary;
+    color: $color-background-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+  }
+  
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  &__price {
+    font-size: 1rem;
+    color: $color-price;
+    text-decoration: line-through;
+  }
+  
+  
+  &__promoPrice {
+    font-size: 1.1rem;
+    color: $color-promo;
+    font-weight: 700;
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating,
+.tag, 
+.discount {
+  font-size: 0.75rem;
+  color: $color-text-secondary;
+}
+
+
+.tag {
+  background-color: $color-tag;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+
+.discount {
+  background: $color-discount;
+  color: $color-bg;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+}

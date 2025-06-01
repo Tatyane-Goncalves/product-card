@@ -1,0 +1,36 @@
+$color-bg: #fff;
+$color-surface: #f9f9f9;
+$color-text-primary: #1f1f1f;
+$color-text-secondary: #6b6b6b;
+$color-price: #2e7d32;
+$color-promo: #d32f2f;
+$destaque-color-primary: #1976d2;
+$destaque-color-primary-hover: #1565c0;
+$color-tag: #fbc02d;
+$color-discount: #d32f2f;
+$color-background-dark: #1e1e1e;
+$color-surface-dark: #2c2c2c;
+$color-text-dark: #f5f5f5;
+
+.loader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-text-secondary;
+  padding: 1rem;
+
+  &__spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #ccc;
+    border-top: 2px solid $destaque-color-primary;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
